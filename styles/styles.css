@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -226,6 +227,31 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-weight: normal;
+  font-size: 0.7rem;
+  color: #2e2e2e;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  line-height: 24px;
+  letter-spacing: 1.1px;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 90%;
@@ -235,4 +261,50 @@ html {
 img {
   max-width: 100%;
   display: block;
+}
+
+header {
+  background-image: url(../assets/home-1.jpeg);
+  height: 100vh;
+  background-size: cover;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  font-family: "Lora", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 25px;
+}
+nav ul .fa-solid {
+  font-size: 0.9rem;
+}
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px;
+  color: #2e2e2e;
+}
+nav h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 35px;
+  margin: 0;
+}
+
+.greenText {
+  color: #539908;
 }

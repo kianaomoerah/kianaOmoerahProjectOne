@@ -5,3 +5,23 @@ html {
     font-size: 125%
 }
 
+body {
+    font-family: $loraFont;
+    font-weight: normal;
+    font-size: .7rem;
+    color: #2e2e2e;
+}
+
+h1 {
+    font-family: $ralewayFont;
+    font-size: 2.3rem;
+    line-height: 24px;
+    letter-spacing: 1.1px;
+}
+
+a {
+    font-family: $ralewayFont;
+    font-size: .9rem;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+}
