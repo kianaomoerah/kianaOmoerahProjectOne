@@ -231,13 +231,6 @@ html {
   font-size: 125%;
 }
 
-body {
-  font-family: "Lora", serif;
-  font-weight: normal;
-  font-size: 0.7rem;
-  color: #2e2e2e;
-}
-
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 2.3rem;
@@ -245,11 +238,19 @@ h1 {
   letter-spacing: 1.1px;
 }
 
-a {
+h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.8rem;
   line-height: 36px;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  line-height: 24px;
+  letter-spacing: 0.3px;
 }
 
 .wrapper {
@@ -261,6 +262,28 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button {
+  color: #f6f6f6;
+  background-color: #539908;
+  padding: 15px 50px;
+  border: none;
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
 }
 
 header {
@@ -292,19 +315,78 @@ nav ul .fa-solid {
   font-size: 0.9rem;
 }
 nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
   padding: 15px;
   color: #2e2e2e;
 }
 nav h1 {
   text-transform: uppercase;
-  font-weight: bold;
   padding: 35px;
   margin: 0;
 }
 
 .greenText {
   color: #539908;
+}
+
+.mainOne,
+.mainTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mainOne div,
+.mainTwo div {
+  max-width: 50%;
+}
+
+.popularRecipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+.popularRecipes p {
+  color: #999999;
+}
+
+.recipeOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.foodGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+.foodGallery ul li {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+.foodGallery ul img {
+  vertical-align: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }

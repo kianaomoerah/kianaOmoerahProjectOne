@@ -5,12 +5,11 @@ html {
     font-size: 125%
 }
 
-body {
-    font-family: $loraFont;
-    font-weight: normal;
-    font-size: .7rem;
-    color: #2e2e2e;
-}
+// body {
+//     font-family: $loraFont;
+//     font-weight: normal;
+//     font-size: .7rem;
+// }
 
 h1 {
     font-family: $ralewayFont;
@@ -19,9 +18,23 @@ h1 {
     letter-spacing: 1.1px;
 }
 
-a {
+h2 {
     font-family: $ralewayFont;
-    font-size: .9rem;
+    // check font size with designer
+    font-size: 1.8rem;
     line-height: 36px;
     letter-spacing: 0.5px;
+    text-transform: uppercase;
+    
 }
+
+p {
+    font-family: $loraFont;
+    font-size: 0.7rem;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+
+
+

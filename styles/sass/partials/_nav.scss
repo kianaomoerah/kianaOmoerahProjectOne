@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        list-style: none;
+        font-family: $loraFont;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 25px;
+        .fa-solid {
+            font-size: .9rem;
+        }
+    }
+
+    a {
+        padding: 15px;
+        color: $black;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        padding: 35px;
+        margin: 0;
+    }
+}
+
+.greenText {
+    color: $darkGreen;
+}

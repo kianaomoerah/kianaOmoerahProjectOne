@@ -4,46 +4,4 @@ header {
     background-size: cover;
 }
 
-// nav {
-//    li {
-//     list-style: none;
-//     text-transform: capitalize;
-//    } 
-//    a {
-//     text-decoration: none;
-//     font-family: $loraFont;
-//    }
-// }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    ul {
-        list-style: none;
-        font-family: $loraFont;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 25px;
-        .fa-solid {
-            font-size: .9rem;
-        }
-    }
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        padding: 15px;
-        color: $black;
-    }
-    h1 {
-        text-transform: uppercase;
-        font-weight: bold;
-        padding: 35px;
-        margin: 0;
-    }
-}
-
-.greenText {
-    color: $darkGreen;
-}
 
