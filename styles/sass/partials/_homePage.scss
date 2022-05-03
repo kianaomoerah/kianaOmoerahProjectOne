@@ -4,6 +4,7 @@
 
     div {
         max-width: 50%;
+        max-height: 713px;
     }
 }
 
@@ -12,10 +13,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
 
     p {
         color: $brownGrey;
+        padding: 0 175px;
+        text-align: center;
+        display: inline-block;
     }
 }
 
@@ -23,7 +26,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0 auto;
+    height: 800px;
+    background-color: rgb(153, 153, 153, 0.3);
 }
 
 .foodGallery ul {
@@ -41,4 +45,94 @@
         width: 100%;
     }
 
+}
+
+.ourResturants {
+    margin: 150px;
+
+    h2, 
+    p {
+        text-align: center;
+    }
+
+    p {
+        padding: 0 125px;
+    }
+
+    img {
+        margin: 0 auto 90px auto;
+    }
+}
+
+.overlayContainer {
+    position: relative;
+}
+
+.circleText {
+    position: absolute;
+    top: -123px;
+    right: 180px;
+
+}
+
+.testimonial {
+
+    background-color: $Green;
+    padding: 150px;
+
+    h2,
+    p {
+        text-align: center;
+    }
+
+    p {
+        font-style: italic;
+        font-size: 0.9rem;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+
+    }
+
+    blockquote {
+        position: relative;
+    }
+
+    blockquote::before {
+        content: "“";
+        font-size: 7rem;
+        color: $paleGreen;
+        position: absolute;
+        top: -30px;
+        left: -100px;
+
+    }
+
+    blockquote::after {
+        content: "”";
+        font-size: 7rem;
+        color: $paleGreen;
+        position: absolute;
+        bottom: -100px;
+        right: -100px;
+    }
+
+
+}
+
+.arrows {
+    text-align: center;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.fa-angle-left {
+    color: $paleGreen
+}
+
+.fa-angle-right {
+    color: $white;
 }

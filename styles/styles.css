@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap");
 html {
   line-height: 1.15;
@@ -255,7 +256,7 @@ p {
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 65%;
   margin: 0 auto;
 }
 
@@ -337,6 +338,7 @@ nav h1 {
 .mainOne div,
 .mainTwo div {
   max-width: 50%;
+  max-height: 713px;
 }
 
 .popularRecipes {
@@ -353,10 +355,12 @@ nav h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
 }
 .popularRecipes p {
   color: #999999;
+  padding: 0 175px;
+  text-align: center;
+  display: inline-block;
 }
 
 .recipeOptions {
@@ -369,7 +373,8 @@ nav h1 {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 auto;
+  height: 800px;
+  background-color: rgba(153, 153, 153, 0.3);
 }
 
 .foodGallery ul {
@@ -389,4 +394,80 @@ nav h1 {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+.ourResturants {
+  margin: 150px;
+}
+.ourResturants h2,
+.ourResturants p {
+  text-align: center;
+}
+.ourResturants p {
+  padding: 0 125px;
+}
+.ourResturants img {
+  margin: 0 auto 90px auto;
+}
+
+.overlayContainer {
+  position: relative;
+}
+
+.circleText {
+  position: absolute;
+  top: -123px;
+  right: 180px;
+}
+
+.testimonial {
+  background-color: #d3e4a4;
+  padding: 150px;
+}
+.testimonial h2,
+.testimonial p {
+  text-align: center;
+}
+.testimonial p {
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+.testimonial blockquote {
+  position: relative;
+}
+.testimonial blockquote::before {
+  content: "“";
+  font-size: 7rem;
+  color: #f1feeb;
+  position: absolute;
+  top: -30px;
+  left: -100px;
+}
+.testimonial blockquote::after {
+  content: "”";
+  font-size: 7rem;
+  color: #f1feeb;
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+}
+
+.arrows {
+  text-align: center;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.fa-angle-left {
+  color: #f1feeb;
+}
+
+.fa-angle-right {
+  color: #f6f6f6;
 }
