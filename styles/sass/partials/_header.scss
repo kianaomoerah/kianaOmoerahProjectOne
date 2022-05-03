@@ -2,6 +2,10 @@ header {
     background-image: url(../assets/home-1.jpeg);
     height: 100vh;
     background-size: cover;
+
+    a {
+        font-family: $ralewayFont;
+    }
 }
 
 

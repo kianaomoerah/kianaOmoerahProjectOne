@@ -287,10 +287,20 @@ li {
   list-style: none;
 }
 
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
 header {
   background-image: url(../assets/home-1.jpeg);
   height: 100vh;
   background-size: cover;
+}
+header a {
+  font-family: "Raleway", sans-serif;
 }
 
 nav {
@@ -337,8 +347,11 @@ nav h1 {
 }
 .mainOne div,
 .mainTwo div {
-  max-width: 50%;
-  max-height: 713px;
+  width: 50vw;
+}
+
+.mainTwo img {
+  width: 50vw;
 }
 
 .popularRecipes {
@@ -360,21 +373,43 @@ nav h1 {
   color: #999999;
   padding: 0 175px;
   text-align: center;
-  display: inline-block;
+}
+.popularRecipes .button {
+  margin-top: 25px;
 }
 
 .recipeOptions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 800px;
+  height: 100%;
   background-color: rgba(153, 153, 153, 0.3);
+  margin: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 60px 40px 60px 120px;
+}
+.recipeOptions li {
+  width: 40%;
+  position: relative;
+}
+.recipeOptions i {
+  position: absolute;
+  left: -50px;
+  top: 0px;
+  font-size: 1.5rem;
+}
+.recipeOptions h3 {
+  margin: 0;
+}
+.recipeOptions p {
+  color: #999999;
+  margin: 15px 0;
 }
 
 .foodGallery ul {
@@ -384,6 +419,7 @@ nav h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 .foodGallery ul li {
   -ms-flex-preferred-size: 33.33%;
@@ -397,7 +433,7 @@ nav h1 {
 }
 
 .ourResturants {
-  margin: 150px;
+  margin: 250px 150px 150px 150px;
 }
 .ourResturants h2,
 .ourResturants p {
