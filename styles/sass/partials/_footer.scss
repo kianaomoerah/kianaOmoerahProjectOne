@@ -1,0 +1,85 @@
+footer {
+    background-color: $blackTwo;
+
+    .interactiveFooter {
+        display: flex;
+        justify-content: space-evenly;
+    
+        ul {
+            width: 33%;
+            padding: 35px 35px 35px 0px;            
+    
+            h2 {
+                color: $darkGreen;
+            }
+    
+            h3 {
+                color: $white;
+                font-size: 0.9rem;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                margin: 35px 0px;
+            }
+
+            p {
+                color: $brownGrey;
+                font-family: $loraFont;
+                font-size: 0.65rem;
+                // line-height: 44px; doesn't look right
+                letter-spacing: 0.3px;
+                border-bottom: 0.3px solid $brownGrey;
+                padding-bottom: 15px;
+            }
+        }
+
+        .noBorder {
+            border-bottom: $blackTwo
+        }
+    }
+
+    .fa-brands {
+        color: $white;
+        font-size: 0.65rem;
+        padding: 5px;
+        margin: 5px 0px;
+    }
+}
+
+form {
+
+    border-bottom: 0.3px solid $brownGrey;
+    input {
+        background-color: #525557;
+        color: $brownGrey;
+        font-style: italic;
+        font-family: $loraFont;
+        font-size: 0.65rem;
+        border: none;
+        // not sure how to make input the correct length
+        padding: 8px;
+        margin-bottom: 20px;
+
+        &[type=submit] {
+            background-color: $darkGreen;
+            color: white;
+            border-top: 0.3px solid black;
+            border-right: 0.3px solid black;
+            border-bottom: 0.3px solid black;
+            margin: 0px;
+            padding: 9px;
+        } 
+
+    }
+}
+
+.copyright {
+    background-color: $black;
+    padding-top: 10px;
+    color: $brownGrey;
+    font-family: $ralewayFont;
+
+    span {
+        color: $darkGreen;
+        text-transform: uppercase;
+    }
+    }

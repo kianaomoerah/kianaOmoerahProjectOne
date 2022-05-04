@@ -287,9 +287,15 @@ li {
   list-style: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4 {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
 }
@@ -337,6 +343,83 @@ nav h1 {
 
 .greenText {
   color: #539908;
+}
+
+footer {
+  background-color: #333333;
+}
+footer .interactiveFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer .interactiveFooter ul {
+  width: 33%;
+  padding: 35px 35px 35px 0px;
+}
+footer .interactiveFooter ul h2 {
+  color: #539908;
+}
+footer .interactiveFooter ul h3 {
+  color: #f6f6f6;
+  font-size: 0.9rem;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin: 35px 0px;
+}
+footer .interactiveFooter ul p {
+  color: #999999;
+  font-family: "Lora", serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.3px;
+  border-bottom: 0.3px solid #999999;
+  padding-bottom: 15px;
+}
+footer .interactiveFooter .noBorder {
+  border-bottom: #333333;
+}
+footer .fa-brands {
+  color: #f6f6f6;
+  font-size: 0.65rem;
+  padding: 5px;
+  margin: 5px 0px;
+}
+
+form {
+  border-bottom: 0.3px solid #999999;
+}
+form input {
+  background-color: #525557;
+  color: #999999;
+  font-style: italic;
+  font-family: "Lora", serif;
+  font-size: 0.65rem;
+  border: none;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+form input[type=submit] {
+  background-color: #539908;
+  color: white;
+  border-top: 0.3px solid black;
+  border-right: 0.3px solid black;
+  border-bottom: 0.3px solid black;
+  margin: 0px;
+  padding: 9px;
+}
+
+.copyright {
+  background-color: #2e2e2e;
+  padding-top: 10px;
+  color: #999999;
+  font-family: "Raleway", sans-serif;
+}
+.copyright span {
+  color: #539908;
+  text-transform: uppercase;
 }
 
 .mainOne,
