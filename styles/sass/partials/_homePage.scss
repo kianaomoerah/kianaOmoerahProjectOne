@@ -36,15 +36,19 @@
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    background-color: rgb(153, 153, 153, 0.3);
+    background-color: $lightGrey;
     margin: 0;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
-    padding: 60px 40px 60px 120px;
-
+    padding-left: 90px;
+    
     li {
         width: 40%;
         position: relative;
+
+        .fa-solid {
+            font-size: 1.3rem;
+        }
     }
 
     i {
@@ -56,6 +60,7 @@
 
     h3 {
         margin: 0;
+        font-size: 1rem;
     }
 
     p {
@@ -99,18 +104,41 @@
     img {
         margin: 0 auto 90px auto;
     }
+
+    .overlayContainer {
+        position: relative;
+    }
+    
+    .patioPhoto {
+        position: relative;
+    }
+    
+    .circleText {
+        position: absolute;
+        // top: -123px;
+        // right: 180px;
+        top: -125px;
+        right: 25px;
+    
+    }
 }
 
-.overlayContainer {
-    position: relative;
-}
+// .overlayContainer {
+//     position: relative;
+// }
 
-.circleText {
-    position: absolute;
-    top: -123px;
-    right: 180px;
+// .patioPhoto {
+//     position: relative;
+// }
 
-}
+// .circleText {
+//     position: absolute;
+//     // top: -123px;
+//     // right: 180px;
+//     top: -125px;
+//     right: 25px;
+
+// }
 
 .testimonial {
 
@@ -152,23 +180,39 @@
         right: -100px;
     }
 
+    .arrows {
+        text-align: center;
+    }
 
+    .fa-angle-left,
+    .fa-angle-right {
+        margin: 15px;
+        font-weight: bold;
+    }
+
+    .fa-angle-left {
+        color: $paleGreen
+    }
+
+    .fa-angle-right {
+        color: $white;
+    }
 }
 
-.arrows {
-    text-align: center;
-}
+// .arrows {
+//     text-align: center;
+// }
 
-.fa-angle-left,
-.fa-angle-right {
-    margin: 15px;
-    font-weight: bold;
-}
+// .fa-angle-left,
+// .fa-angle-right {
+//     margin: 15px;
+//     font-weight: bold;
+// }
 
-.fa-angle-left {
-    color: $paleGreen
-}
+// .fa-angle-left {
+//     color: $paleGreen
+// }
 
-.fa-angle-right {
-    color: $white;
-}
+// .fa-angle-right {
+//     color: $white;
+// }

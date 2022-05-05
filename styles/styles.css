@@ -309,6 +309,10 @@ header a {
   font-family: "Raleway", sans-serif;
 }
 
+.contactHeader {
+  background-image: url(../assets/contact-1.jpeg);
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,16 +474,18 @@ form input[type=submit] {
   height: 100%;
   background-color: rgba(153, 153, 153, 0.3);
   margin: 0;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 60px 40px 60px 120px;
+  padding-left: 90px;
 }
 .recipeOptions li {
   width: 40%;
   position: relative;
+}
+.recipeOptions li .fa-solid {
+  font-size: 1.3rem;
 }
 .recipeOptions i {
   position: absolute;
@@ -489,6 +495,7 @@ form input[type=submit] {
 }
 .recipeOptions h3 {
   margin: 0;
+  font-size: 1rem;
 }
 .recipeOptions p {
   color: #999999;
@@ -528,15 +535,16 @@ form input[type=submit] {
 .ourResturants img {
   margin: 0 auto 90px auto;
 }
-
-.overlayContainer {
+.ourResturants .overlayContainer {
   position: relative;
 }
-
-.circleText {
+.ourResturants .patioPhoto {
+  position: relative;
+}
+.ourResturants .circleText {
   position: absolute;
-  top: -123px;
-  right: 180px;
+  top: -125px;
+  right: 25px;
 }
 
 .testimonial {
@@ -572,21 +580,67 @@ form input[type=submit] {
   bottom: -100px;
   right: -100px;
 }
-
-.arrows {
+.testimonial .arrows {
   text-align: center;
 }
-
-.fa-angle-left,
-.fa-angle-right {
+.testimonial .fa-angle-left,
+.testimonial .fa-angle-right {
   margin: 15px;
   font-weight: bold;
 }
-
-.fa-angle-left {
+.testimonial .fa-angle-left {
   color: #f1feeb;
 }
-
-.fa-angle-right {
+.testimonial .fa-angle-right {
   color: #f6f6f6;
+}
+
+.contactMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactMain form {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contactMain form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contactMain form .userInfo {
+  margin-right: 10px;
+}
+.contactMain form button {
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+}
+.contactMain form input, .contactMain form textarea {
+  background-color: rgba(153, 153, 153, 0.3);
+}
+.contactMain form textarea {
+  border: none;
+}
+.contactMain aside {
+  width: 40%;
+  background-color: rgba(153, 153, 153, 0.3);
+  max-width: 33vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

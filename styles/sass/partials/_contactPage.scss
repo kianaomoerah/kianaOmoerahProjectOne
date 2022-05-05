@@ -1,0 +1,40 @@
+.contactMain {
+
+    display: flex;
+
+    form {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .userInfo {
+            margin-right: 10px;
+        }
+
+        button {
+            border: none;
+            background-color: transparent;
+            padding: 15px;
+        }
+            input, textarea {
+                background-color: $lightGrey;
+            }
+
+            textarea {
+                border: none;
+            }
+    }
+
+    aside {
+        width: 40%;
+        background-color: $lightGrey;
+        max-width: 33vw;
+        display: flex;
+    }
+}
