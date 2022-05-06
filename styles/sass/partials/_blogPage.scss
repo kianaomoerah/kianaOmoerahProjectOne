@@ -1,0 +1,72 @@
+.blogMain {
+
+    p {
+        color: $brownGrey;
+    }
+
+    .tagShare {
+
+        border-top: 0.3px solid $brownGrey;
+        border-bottom: 0.3px solid $brownGrey;
+        padding: 20px 0;
+        margin: 40px 0;
+        h3, 
+        p,
+        i {
+            display:inline-block;
+        }
+
+        h3 {
+            margin: 0 5px 0 0;
+        }
+    }
+    .fa-brands {
+        color: $brownGrey;
+        margin: 0 10px;
+    }
+
+    .author {
+        display: flex;
+        margin-top: 20px;
+
+        .authorImage {
+            min-height: 100%;
+        }
+
+        .authorMessage {
+            margin: 0 35px;
+            padding: 30px 30px 0 30px;
+            width: calc(87% - 70px);
+            background-color: $lightGrey;
+
+            h3 {
+                margin: 0;
+            }
+
+            // p {
+            //     margin-top: 
+            // }
+        }
+
+    }
+
+    .relatedPosts {
+        margin: 55px 0;
+        padding-bottom: 30px;
+        border-top: 0.3px solid $brownGrey;
+        border-bottom: 0.3px solid $brownGrey;
+    }
+        h3 {
+            margin: 35px 0;
+            font-size: 1rem;
+        }
+        .flexPosts {
+            display: flex;
+
+            .post {
+            width: calc(100% / 3)
+            }
+    }
+
+    
+}

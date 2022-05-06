@@ -313,6 +313,10 @@ header a {
   background-image: url(../assets/contact-1.jpeg);
 }
 
+.blogHeader {
+  background-image: url(../assets/blog-1.jpeg);
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,4 +647,62 @@ form input[type=submit] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.blogMain p {
+  color: #999999;
+}
+.blogMain .tagShare {
+  border-top: 0.3px solid #999999;
+  border-bottom: 0.3px solid #999999;
+  padding: 20px 0;
+  margin: 40px 0;
+}
+.blogMain .tagShare h3,
+.blogMain .tagShare p,
+.blogMain .tagShare i {
+  display: inline-block;
+}
+.blogMain .tagShare h3 {
+  margin: 0 5px 0 0;
+}
+.blogMain .fa-brands {
+  color: #999999;
+  margin: 0 10px;
+}
+.blogMain .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+.blogMain .author .authorImage {
+  min-height: 100%;
+}
+.blogMain .author .authorMessage {
+  margin: 0 35px;
+  padding: 30px 30px 0 30px;
+  width: calc(87% - 70px);
+  background-color: rgba(153, 153, 153, 0.3);
+}
+.blogMain .author .authorMessage h3 {
+  margin: 0;
+}
+.blogMain .relatedPosts {
+  margin: 55px 0;
+  padding-bottom: 30px;
+  border-top: 0.3px solid #999999;
+  border-bottom: 0.3px solid #999999;
+}
+.blogMain h3 {
+  margin: 35px 0;
+  font-size: 1rem;
+}
+.blogMain .flexPosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blogMain .flexPosts .post {
+  width: 33.3333333333%;
 }
