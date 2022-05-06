@@ -300,6 +300,15 @@ h4 {
   font-family: "Raleway", sans-serif;
 }
 
+.miniBorder::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  padding-top: 20px;
+  border-bottom: 2px solid #539908;
+}
+
 header {
   background-image: url(../assets/home-1.jpeg);
   height: 100vh;
@@ -705,4 +714,58 @@ form input[type=submit] {
 }
 .blogMain .flexPosts .post {
   width: 33.3333333333%;
+}
+.blogMain .blogComments h3 {
+  margin: 20px 0;
+}
+.blogMain .commentDate {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 0.6rem;
+}
+.blogMain .commentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+}
+.blogMain .commentContainer img {
+  margin-top: 15px;
+}
+.blogMain .commentBlock {
+  background-color: rgba(153, 153, 153, 0.3);
+  padding: 0px 20px;
+  position: relative;
+  margin: 15px 40px;
+  width: calc(95% - 80px);
+}
+.blogMain .commentBlock p {
+  color: #2e2e2e;
+}
+.blogMain .commentBlock span {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+}
+.blogMain .commentBlock::after {
+  content: " ";
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  border-top: 15px solid transparent;
+  border-right: 15px solid rgba(153, 153, 153, 0.3);
+  border-left: none;
+  border-bottom: 15px solid transparent;
+}
+.blogMain form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }

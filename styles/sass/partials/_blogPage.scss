@@ -68,5 +68,60 @@
             }
     }
 
+    .blogComments {
+        h3 {
+            margin: 20px 0;
+        }
+    }
+
+    .commentDate {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 0.6rem;
+    }
+
+    .commentContainer {
+        display: flex;
+        margin: 0px;
+            img {
+                margin-top: 15px;
+            }
+    }
+
+    .commentBlock {
+        background-color: $lightGrey;
+        padding: 0px 20px;
+        position: relative;
+        margin: 15px 40px;
+        width: calc(95% - 80px);
+
+        p {
+            color: $black;
+        }
+
+        span {
+            font-family: $ralewayFont;
+            font-size: 0.8rem;
+        }
+    }
+
+    // code used to create comment box full credit to CodePen post: https: //codepen.io/lideo/pen/KKGeQG
+    .commentBlock::after {
+        content: " ";
+        position: absolute;
+        left: -15px;
+        top: 15px;
+        border-top: 15px solid transparent;
+        border-right: 15px solid $lightGrey;
+        border-left: none;
+        border-bottom: 15px solid transparent;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
     
 }
