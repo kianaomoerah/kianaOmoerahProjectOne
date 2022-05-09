@@ -20,7 +20,10 @@
                 <li><a class="greenText" href="">Blog</a></li>
                 <li><a href="">Shop</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href=""></a><i class="fa-solid fa-bag-shopping"></i></li>
+                <div class="cartCount">
+                    <li><a href=""></a><i class="fa-solid fa-bag-shopping"></i></li>
+                    <i class="fa-solid fa-2"></i>
+                </div>
                 <li><a href=""></a><i class="fa-solid fa-magnifying-glass"></i></li>
             </ul>
         </nav>
@@ -114,7 +117,7 @@
                     </div>
                 </div>
             </section>
-            <form action="#" method="POST" class="commentForm" name="commentForm">
+            <form  class="commentForm" action="#" method="POST" name="commentForm">
                 <h3>Leave A Comment</h3>
                 <p>Your email address will not be published. Required fields are marked *</p>
                 <div class="commenterInfo">
@@ -127,12 +130,12 @@
                     <label for="website" class="sr-only">Your Website</label>
                     <input type="text" id="website" placeholder="Your Website">
                 </div>
-                <div class="commentSubmit">
+                <div>
                 <label for="comment" class="sr-only">Comment</label>
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                <textarea  class= "userComment"name="comment" id="comment" style="resize:none;"cols="30" rows="10" placeholder="Comment"></textarea>
                 </div>
                 <a href="#" class="button">Submit Comment</a>
-            </section>
+            </form>
         </main>
     </div>
     <footer>

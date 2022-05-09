@@ -43,34 +43,62 @@ footer {
         padding: 5px;
         margin: 5px 0px;
     }
-}
 
-form {
-
-    border-bottom: 0.3px solid $brownGrey;
-    input {
-        background-color: #525557;
-        color: $brownGrey;
-        font-style: italic;
-        font-family: $loraFont;
-        font-size: 0.65rem;
-        border: none;
-        // not sure how to make input the correct length
-        padding: 8px;
-        margin-bottom: 20px;
-
-        &[type=submit] {
-            background-color: $darkGreen;
-            color: white;
-            border-top: 0.3px solid black;
-            border-right: 0.3px solid black;
-            border-bottom: 0.3px solid black;
-            margin: 0px;
-            padding: 9px;
-        } 
-
+    form {
+    
+        border-bottom: 0.3px solid $brownGrey;
+    
+        input {
+            background-color: #525557;
+            color: $brownGrey;
+            font-style: italic;
+            font-family: $loraFont;
+            font-size: 0.65rem;
+            border: none;
+            // not sure how to make input the correct length
+            padding: 8px;
+            margin-bottom: 20px;
+    
+            &[type=submit] {
+                background-color: $darkGreen;
+                color: white;
+                border-top: 0.3px solid black;
+                border-right: 0.3px solid black;
+                border-bottom: 0.3px solid black;
+                margin: 0px;
+                padding: 9px;
+            }
+    
+        }
     }
 }
+
+// form {
+
+//     border-bottom: 0.3px solid $brownGrey;
+//     input {
+//         background-color: #525557;
+//         color: $brownGrey;
+//         font-style: italic;
+//         font-family: $loraFont;
+//         font-size: 0.65rem;
+//         border: none;
+//         // not sure how to make input the correct length
+//         padding: 8px;
+//         margin-bottom: 20px;
+
+//         &[type=submit] {
+//             background-color: $darkGreen;
+//             color: white;
+//             border-top: 0.3px solid black;
+//             border-right: 0.3px solid black;
+//             border-bottom: 0.3px solid black;
+//             margin: 0px;
+//             padding: 9px;
+//         } 
+
+//     }
+// }
 
 .copyright {
     background-color: $black;

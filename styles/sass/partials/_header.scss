@@ -6,6 +6,18 @@ header {
     a {
         font-family: $ralewayFont;
     }
+
+    .cartCount {
+        position: relative;
+
+        .fa-2 {
+            font-size: 0.6rem;
+            position: absolute;
+            top: 24px;
+            right: -3px;
+            color: $darkGreen;
+        }
+    }
 }
 
 .contactHeader {

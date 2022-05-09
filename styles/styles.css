@@ -274,7 +274,7 @@ a {
 .button {
   color: #f6f6f6;
   background-color: #539908;
-  padding: 15px 50px;
+  padding: 15px 25px;
   border: none;
   font-family: "Lora", serif;
   font-size: 0.7rem;
@@ -316,6 +316,16 @@ header {
 }
 header a {
   font-family: "Raleway", sans-serif;
+}
+header .cartCount {
+  position: relative;
+}
+header .cartCount .fa-2 {
+  font-size: 0.6rem;
+  position: absolute;
+  top: 24px;
+  right: -3px;
+  color: #539908;
 }
 
 .contactHeader {
@@ -404,11 +414,10 @@ footer .fa-brands {
   padding: 5px;
   margin: 5px 0px;
 }
-
-form {
+footer form {
   border-bottom: 0.3px solid #999999;
 }
-form input {
+footer form input {
   background-color: #525557;
   color: #999999;
   font-style: italic;
@@ -418,7 +427,7 @@ form input {
   padding: 8px;
   margin-bottom: 20px;
 }
-form input[type=submit] {
+footer form input[type=submit] {
   background-color: #539908;
   color: white;
   border-top: 0.3px solid black;
@@ -756,16 +765,36 @@ form input[type=submit] {
   border-left: none;
   border-bottom: 15px solid transparent;
 }
-.blogMain form {
+.blogMain .commentForm h3 {
+  margin: 35px 0 0 0;
+}
+.blogMain .commentForm .commenterInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogMain .commentForm input {
+  display: inline-block;
+  width: calc(33.3333333333% - 4px);
+  padding: 7px 5px;
+  font-family: "Lora", serif, serif;
+  font-size: 0.7rem;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+.blogMain .commentForm .userComment {
+  display: inline-block;
   width: 100%;
+  margin-top: 15px;
+  font-family: "Lora", serif, serif;
+  font-size: 0.7rem;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+.blogMain .commentForm .button {
+  margin-top: 10px;
+  margin-bottom: 200px;
 }
