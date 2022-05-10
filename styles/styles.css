@@ -334,6 +334,8 @@ h4 {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 60vh;
+  background-size: contain;
 }
 .contactHeader a {
   font-family: "Raleway", sans-serif;
@@ -354,6 +356,8 @@ h4 {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 83vh;
+  background-size: contain;
 }
 .blogHeader a {
   font-family: "Raleway", sans-serif;
@@ -400,6 +404,10 @@ nav h1 {
   text-transform: uppercase;
   padding: 35px;
   margin: 0;
+}
+nav .fa-bars,
+nav button {
+  visibility: hidden;
 }
 
 .greenText {
@@ -841,4 +849,177 @@ footer form input[type=submit] {
 
 .blogFooter form {
   margin-top: 125px;
+}
+
+@media (max-width: 1550px) {
+  .blogMain .blogPost h2 {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 1400px) {
+  .blogHeader {
+    background-size: cover;
+    height: 400px;
+  }
+}
+@media (max-width: 1160px) {
+  nav .navBar {
+    visibility: hidden;
+  }
+  nav .fa-bars {
+    visibility: visible;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 2rem;
+  }
+
+  header {
+    max-width: 99vw;
+  }
+
+  .mainOne,
+.mainTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainOne div,
+.mainOne img,
+.mainTwo div,
+.mainTwo img {
+    width: 100vw;
+  }
+
+  .ourResturants {
+    width: 100vw;
+    margin: 30px 0px 0px 0px;
+  }
+  .ourResturants p {
+    padding: 0;
+  }
+  .ourResturants .overlayContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ourResturants .overlayContainer .patioPhoto,
+.ourResturants .overlayContainer .circleText {
+    position: static;
+    margin: 0;
+  }
+  .ourResturants .overlayContainer .circleText {
+    margin-top: 20px;
+    max-width: 20vw;
+  }
+
+  .testimonial blockquote {
+    margin: 0;
+  }
+
+  footer h3 {
+    font-size: 1.3rem;
+  }
+  footer p {
+    font-size: 0.55rem;
+  }
+}
+@media (max-width: 940px) {
+  .contactHeader,
+.blogHeader {
+    height: 300px;
+  }
+
+  footer .interactiveFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .interactiveFooter ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  .blogMain .flexPosts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogMain .flexPosts .post {
+    width: 65%;
+  }
+}
+@media (max-width: 800px) {
+  .contactMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 775px) {
+  .homeHeader {
+    background-size: contain;
+    height: 300px;
+  }
+}
+@media (max-width: 700px) {
+  .popularRecipes p {
+    padding: 0;
+  }
+
+  .testimonial {
+    padding: 0;
+  }
+  .testimonial h2 {
+    margin: 0;
+  }
+
+  .contactHeader,
+.blogHeader {
+    height: 200px;
+    background-size: cover;
+  }
+
+  .commentForm .commenterInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .commentForm .commenterInfo input {
+    width: 100%;
+  }
 }

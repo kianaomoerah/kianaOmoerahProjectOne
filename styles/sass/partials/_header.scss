@@ -27,8 +27,12 @@
 
 .contactHeader {
     @include headerImage(url(../assets/contact-1.jpeg));
+    height: 60vh;
+    background-size: contain;
 }
 
 .blogHeader {
     @include headerImage(url(../assets/blog-1.jpeg));
+    height: 83vh;
+    background-size: contain;
 }

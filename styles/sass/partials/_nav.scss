@@ -24,6 +24,11 @@ nav {
         padding: 35px;
         margin: 0;
     }
+
+    .fa-bars,
+    button {
+        visibility: hidden;
+    }
 }
 
 .greenText {

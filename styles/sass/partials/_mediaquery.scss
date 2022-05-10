@@ -1,0 +1,185 @@
+@media (max-width: 1550px ) {
+
+    .blogMain {
+
+        .blogPost {
+    
+            h2 {
+                margin-top: 5px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .blogHeader {
+        background-size: cover;
+        height: 400px;
+    }
+}
+@media (max-width: 1160px) {
+
+    nav {
+
+        .navBar {
+            visibility: hidden;
+        }
+
+        .fa-bars {
+            visibility: visible;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            font-size: 2rem;
+        }
+    }
+
+    header {
+        max-width: 99vw;
+    }
+    .mainOne,
+    .mainTwo {
+        flex-direction: column;
+
+        div,
+        img {
+        width: 100vw;
+        }
+    }
+
+    .ourResturants {
+        width: 100vw;
+        margin: 30px 0px 0px 0px;
+
+        p {
+            padding: 0;
+        }
+
+        .overlayContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .patioPhoto,
+            .circleText {
+                position:static;
+                margin: 0;
+            }
+
+            .circleText {
+                margin-top: 20px;
+                max-width: 20vw;
+            }
+
+        }
+    }
+
+    .testimonial {
+        
+        blockquote {
+            margin: 0;
+        }
+    }
+
+    footer {
+        
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 0.55rem;
+        }
+
+    }
+}
+
+@media (max-width: 940px) {
+
+    .contactHeader,
+    .blogHeader {
+        height: 300px;
+    }
+    
+    footer {
+        .interactiveFooter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            ul {
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .blogMain {
+
+        .flexPosts {
+            flex-direction: column;
+            align-items: center;
+        
+            .post {
+                width: 65%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .contactMain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .author {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 775px) {
+    
+    .homeHeader {
+        background-size: contain;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .popularRecipes {
+        
+        p {
+            padding: 0
+        }
+    }
+    .testimonial {
+        padding: 0;
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .contactHeader,
+    .blogHeader {
+        height: 200px;
+        background-size: cover;
+    }
+
+    .commentForm {
+
+        .commenterInfo {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+
+        }
+    }
+}
