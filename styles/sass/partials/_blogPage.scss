@@ -2,6 +2,18 @@
 
     p {
         color: $brownGrey;
+        font-family: $loraFont;
+    }
+
+    .blogPost {
+
+        h2 {
+            margin: 125px 0px 0px 0px;
+        }
+
+        .subtext {
+            margin-bottom: 30px;
+        }
     }
 
     .tagShare {
@@ -20,6 +32,7 @@
             margin: 0 5px 0 0;
         }
     }
+
     .fa-brands {
         color: $brownGrey;
         margin: 0 10px;
@@ -42,12 +55,7 @@
             h3 {
                 margin: 0;
             }
-
-            // p {
-            //     margin-top: 
-            // }
         }
-
     }
 
     .relatedPosts {
@@ -75,7 +83,7 @@
     }
 
     .commentDate {
-        font-style: italic;
+        font-family: $ralewayFont;
         font-weight: bold;
         font-size: 0.6rem;
     }
@@ -102,6 +110,7 @@
         span {
             font-family: $ralewayFont;
             font-size: 0.8rem;
+            font-weight: bold;
         }
     }
 
@@ -121,6 +130,10 @@
         
         h3 {
             margin: 35px 0 0 0;
+        }
+
+        p {
+            font-style: italic;
         }
 
         .commenterInfo {
@@ -156,4 +169,11 @@
         }
     }
     
+}
+
+.blogFooter {
+    
+    form {
+        margin-top: 125px;
+    }
 }

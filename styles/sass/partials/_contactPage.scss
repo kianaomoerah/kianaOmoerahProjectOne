@@ -1,40 +1,55 @@
 .contactMain {
-
     display: flex;
 
-    form {
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .contactForm,
+    ul {
+        padding: 30px 0px;
+    }
 
+    form {
+        
         div {
-            display: flex;
-            flex-direction: row;
+            padding-right: 20px;
+        }
+
+        input,
+        textarea {
+            background-color: $lightGrey;
+            border: none;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 0.7rem;
+        }        
+        
+        .fullWidthInput {
+            width: 100%;
         }
 
         .userInfo {
-            margin-right: 10px;
+            margin-left: 5px;
+            width: calc((100% / 2) - 10px);
+
+            #name {
+                margin-right: 15px;
+            }
         }
+        
 
         button {
+            display: block;
             border: none;
             background-color: transparent;
             padding: 15px;
-        }
-            input, textarea {
-                background-color: $lightGrey;
-            }
-
-            textarea {
-                border: none;
-            }
+            font-size: 0.7rem;
+            color: $darkGreen;
+            text-transform: uppercase;
+        }  
     }
 
     aside {
-        width: 40%;
         background-color: $lightGrey;
-        max-width: 33vw;
-        display: flex;
+        padding-left: 20px;
+        width: 50vw;
     }
 }
+

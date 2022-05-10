@@ -1,7 +1,8 @@
-header {
-    background-image: url(../assets/home-1.jpeg);
+@mixin headerImage ($headerImage) {
+    background-image: $headerImage;
     height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
 
     a {
         font-family: $ralewayFont;
@@ -20,10 +21,14 @@ header {
     }
 }
 
+.homeHeader {
+    @include headerImage(url(../assets/home-1.jpeg));
+}
+
 .contactHeader {
-    background-image: url(../assets/contact-1.jpeg);
+    @include headerImage(url(../assets/contact-1.jpeg));
 }
 
 .blogHeader {
-    background-image: url(../assets/blog-1.jpeg);
+    @include headerImage(url(../assets/blog-1.jpeg));
 }

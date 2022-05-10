@@ -67,7 +67,6 @@
         color: $brownGrey;
         margin: 15px 0;
     }
-
 }
 
 
@@ -86,7 +85,6 @@
         object-fit: cover;
         width: 100%;
     }
-
 }
 
 .ourResturants {
@@ -115,33 +113,13 @@
     
     .circleText {
         position: absolute;
-        // top: -123px;
-        // right: 180px;
-        top: -125px;
-        right: 25px;
+        bottom: 123px;
+        right: 187px;
     
     }
 }
 
-// .overlayContainer {
-//     position: relative;
-// }
-
-// .patioPhoto {
-//     position: relative;
-// }
-
-// .circleText {
-//     position: absolute;
-//     // top: -123px;
-//     // right: 180px;
-//     top: -125px;
-//     right: 25px;
-
-// }
-
 .testimonial {
-
     background-color: $Green;
     padding: 150px;
 
@@ -198,21 +176,3 @@
         color: $white;
     }
 }
-
-// .arrows {
-//     text-align: center;
-// }
-
-// .fa-angle-left,
-// .fa-angle-right {
-//     margin: 15px;
-//     font-weight: bold;
-// }
-
-// .fa-angle-left {
-//     color: $paleGreen
-// }
-
-// .fa-angle-right {
-//     color: $white;
-// }

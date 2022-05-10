@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Raleway:wght@400;600&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -304,23 +304,24 @@ h4 {
   content: "";
   display: block;
   margin: 0 auto;
-  width: 30%;
+  width: 25%;
   padding-top: 20px;
   border-bottom: 2px solid #539908;
 }
 
-header {
+.homeHeader {
   background-image: url(../assets/home-1.jpeg);
   height: 100vh;
   background-size: cover;
+  background-repeat: no-repeat;
 }
-header a {
+.homeHeader a {
   font-family: "Raleway", sans-serif;
 }
-header .cartCount {
+.homeHeader .cartCount {
   position: relative;
 }
-header .cartCount .fa-2 {
+.homeHeader .cartCount .fa-2 {
   font-size: 0.6rem;
   position: absolute;
   top: 24px;
@@ -330,10 +331,42 @@ header .cartCount .fa-2 {
 
 .contactHeader {
   background-image: url(../assets/contact-1.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactHeader a {
+  font-family: "Raleway", sans-serif;
+}
+.contactHeader .cartCount {
+  position: relative;
+}
+.contactHeader .cartCount .fa-2 {
+  font-size: 0.6rem;
+  position: absolute;
+  top: 24px;
+  right: -3px;
+  color: #539908;
 }
 
 .blogHeader {
   background-image: url(../assets/blog-1.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blogHeader a {
+  font-family: "Raleway", sans-serif;
+}
+.blogHeader .cartCount {
+  position: relative;
+}
+.blogHeader .cartCount .fa-2 {
+  font-size: 0.6rem;
+  position: absolute;
+  top: 24px;
+  right: -3px;
+  color: #539908;
 }
 
 nav {
@@ -347,6 +380,7 @@ nav {
 nav ul {
   list-style: none;
   font-family: "Lora", serif;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,7 +528,7 @@ footer form input[type=submit] {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100%;
-  background-color: rgba(153, 153, 153, 0.3);
+  background-color: #f2f2f2;
   margin: 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -565,8 +599,8 @@ footer form input[type=submit] {
 }
 .ourResturants .circleText {
   position: absolute;
-  top: -125px;
-  right: 25px;
+  bottom: 123px;
+  right: 187px;
 }
 
 .testimonial {
@@ -622,53 +656,55 @@ footer form input[type=submit] {
   display: -ms-flexbox;
   display: flex;
 }
-.contactMain form {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.contactMain .contactForm,
+.contactMain ul {
+  padding: 30px 0px;
 }
 .contactMain form div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  padding-right: 20px;
+}
+.contactMain form input,
+.contactMain form textarea {
+  background-color: #f2f2f2;
+  border: none;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 0.7rem;
+}
+.contactMain form .fullWidthInput {
+  width: 100%;
 }
 .contactMain form .userInfo {
-  margin-right: 10px;
+  margin-left: 5px;
+  width: calc(50% - 10px);
+}
+.contactMain form .userInfo #name {
+  margin-right: 15px;
 }
 .contactMain form button {
+  display: block;
   border: none;
   background-color: transparent;
   padding: 15px;
-}
-.contactMain form input, .contactMain form textarea {
-  background-color: rgba(153, 153, 153, 0.3);
-}
-.contactMain form textarea {
-  border: none;
+  font-size: 0.7rem;
+  color: #539908;
+  text-transform: uppercase;
 }
 .contactMain aside {
-  width: 40%;
-  background-color: rgba(153, 153, 153, 0.3);
-  max-width: 33vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  width: 50vw;
 }
 
 .blogMain p {
   color: #999999;
+  font-family: "Lora", serif;
+}
+.blogMain .blogPost h2 {
+  margin: 125px 0px 0px 0px;
+}
+.blogMain .blogPost .subtext {
+  margin-bottom: 30px;
 }
 .blogMain .tagShare {
   border-top: 0.3px solid #999999;
@@ -701,7 +737,7 @@ footer form input[type=submit] {
   margin: 0 35px;
   padding: 30px 30px 0 30px;
   width: calc(87% - 70px);
-  background-color: rgba(153, 153, 153, 0.3);
+  background-color: #f2f2f2;
 }
 .blogMain .author .authorMessage h3 {
   margin: 0;
@@ -728,7 +764,7 @@ footer form input[type=submit] {
   margin: 20px 0;
 }
 .blogMain .commentDate {
-  font-style: italic;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 0.6rem;
 }
@@ -742,7 +778,7 @@ footer form input[type=submit] {
   margin-top: 15px;
 }
 .blogMain .commentBlock {
-  background-color: rgba(153, 153, 153, 0.3);
+  background-color: #f2f2f2;
   padding: 0px 20px;
   position: relative;
   margin: 15px 40px;
@@ -754,6 +790,7 @@ footer form input[type=submit] {
 .blogMain .commentBlock span {
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
+  font-weight: bold;
 }
 .blogMain .commentBlock::after {
   content: " ";
@@ -761,12 +798,15 @@ footer form input[type=submit] {
   left: -15px;
   top: 15px;
   border-top: 15px solid transparent;
-  border-right: 15px solid rgba(153, 153, 153, 0.3);
+  border-right: 15px solid #f2f2f2;
   border-left: none;
   border-bottom: 15px solid transparent;
 }
 .blogMain .commentForm h3 {
   margin: 35px 0 0 0;
+}
+.blogMain .commentForm p {
+  font-style: italic;
 }
 .blogMain .commentForm .commenterInfo {
   display: -webkit-box;
@@ -797,4 +837,8 @@ footer form input[type=submit] {
 .blogMain .commentForm .button {
   margin-top: 10px;
   margin-bottom: 200px;
+}
+
+.blogFooter form {
+  margin-top: 125px;
 }
