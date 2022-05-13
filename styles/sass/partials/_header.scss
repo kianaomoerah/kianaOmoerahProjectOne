@@ -28,11 +28,11 @@
 .contactHeader {
     @include headerImage(url(../assets/contact-1.jpeg));
     height: 60vh;
-    background-size: contain;
+    background-size: cover;
 }
 
 .blogHeader {
     @include headerImage(url(../assets/blog-1.jpeg));
-    height: 83vh;
+    height: 60vh;
     background-size: contain;
 }

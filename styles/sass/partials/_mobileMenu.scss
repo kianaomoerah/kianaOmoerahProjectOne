@@ -1,0 +1,37 @@
+// button {
+//     visibility: hidden;
+// }
+ #mobileButton {
+    display:none;
+    position: relative;
+    background-color: $darkGreen;
+    padding: 20px;
+    border: none;
+ }
+
+//  changed to default of display none for mobile menu
+.mobileMenu {
+    display: none;
+    position: absolute;
+    top: 113px;
+    right: 0px;
+
+
+    ul {
+    flex-direction: column;
+    }
+
+    li {
+        font-family: $loraFont;
+        background-color: $paleGreen;
+        padding: 5px 15px;
+    }
+
+}
+
+.menuAppear {
+    display:block;
+}
+
+
+

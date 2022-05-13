@@ -1,5 +1,6 @@
 nav {
     display: flex;
+    // flex-direction: column;
     justify-content: space-between;
 
     ul {
@@ -19,18 +20,19 @@ nav {
         color: $black;
     }
 
+    a:hover,
+    a:focus {
+        color: $darkGreen;
+    }
+
     h1 {
         text-transform: uppercase;
         padding: 35px;
         margin: 0;
-    }
-
-    .fa-bars,
-    button {
-        visibility: hidden;
     }
 }
 
 .greenText {
     color: $darkGreen;
 }
+

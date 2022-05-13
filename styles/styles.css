@@ -309,6 +309,36 @@ h4 {
   border-bottom: 2px solid #539908;
 }
 
+#mobileButton {
+  display: none;
+  position: relative;
+  background-color: #539908;
+  padding: 20px;
+  border: none;
+}
+
+.mobileMenu {
+  display: none;
+  position: absolute;
+  top: 113px;
+  right: 0px;
+}
+.mobileMenu ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mobileMenu li {
+  font-family: "Lora", serif;
+  background-color: #f1feeb;
+  padding: 5px 15px;
+}
+
+.menuAppear {
+  display: block;
+}
+
 .homeHeader {
   background-image: url(../assets/home-1.jpeg);
   height: 100vh;
@@ -335,7 +365,7 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
-  background-size: contain;
+  background-size: cover;
 }
 .contactHeader a {
   font-family: "Raleway", sans-serif;
@@ -356,7 +386,7 @@ h4 {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 83vh;
+  height: 60vh;
   background-size: contain;
 }
 .blogHeader a {
@@ -400,14 +430,14 @@ nav a {
   padding: 15px;
   color: #2e2e2e;
 }
+nav a:hover,
+nav a:focus {
+  color: #539908;
+}
 nav h1 {
   text-transform: uppercase;
   padding: 35px;
   margin: 0;
-}
-nav .fa-bars,
-nav button {
-  visibility: hidden;
 }
 
 .greenText {
@@ -668,6 +698,14 @@ footer form input[type=submit] {
 .contactMain ul {
   padding: 30px 0px;
 }
+.contactMain .wrapper {
+  max-width: 1260px;
+  width: 80%;
+  margin: 0 auto;
+}
+.contactMain .messageContainer {
+  margin-left: 150px;
+}
 .contactMain form div {
   padding-right: 20px;
 }
@@ -701,7 +739,7 @@ footer form input[type=submit] {
 .contactMain aside {
   background-color: #f2f2f2;
   padding-left: 20px;
-  width: 50vw;
+  width: 55vw;
 }
 
 .blogMain p {
@@ -863,17 +901,6 @@ footer form input[type=submit] {
   }
 }
 @media (max-width: 1160px) {
-  nav .navBar {
-    visibility: hidden;
-  }
-  nav .fa-bars {
-    visibility: visible;
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    font-size: 2rem;
-  }
-
   header {
     max-width: 99vw;
   }
@@ -933,6 +960,18 @@ footer form input[type=submit] {
   }
 }
 @media (max-width: 940px) {
+  nav .navBar {
+    display: none;
+  }
+
+  #mobileButton {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 2rem;
+  }
+
   .contactHeader,
 .blogHeader {
     height: 300px;
@@ -977,6 +1016,9 @@ footer form input[type=submit] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contactMain .messageContainer {
+    margin-left: 0px;
   }
 
   .author {

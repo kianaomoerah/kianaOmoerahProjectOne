@@ -20,21 +20,6 @@
 }
 @media (max-width: 1160px) {
 
-    nav {
-
-        .navBar {
-            visibility: hidden;
-        }
-
-        .fa-bars {
-            visibility: visible;
-            position: absolute;
-            right: 25px;
-            top: 25px;
-            font-size: 2rem;
-        }
-    }
-
     header {
         max-width: 99vw;
     }
@@ -97,6 +82,30 @@
 
 @media (max-width: 940px) {
 
+    nav {
+
+        .navBar {
+            display: none;
+        }
+    
+    }
+    
+    // .mobileMenu {
+    //     display: block;
+    // }
+
+    // button {
+    //     display: fixed;
+    // }
+
+    #mobileButton {
+        display:block;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        font-size: 2rem;
+    }
+
     .contactHeader,
     .blogHeader {
         height: 300px;
@@ -129,9 +138,14 @@
 }
 
 @media (max-width: 800px) {
+
     .contactMain {
         flex-direction: column;
         align-items: center;
+
+        .messageContainer {
+                margin-left: 0px;
+            }
     }
 
     .author {
